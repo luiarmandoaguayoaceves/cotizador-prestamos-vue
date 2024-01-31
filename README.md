@@ -39,3 +39,23 @@
         <style scope>
         </style>`
 
+## Existen dos tipos de API's para Vue 
+    - Option 
+        Se agrega los elementos a esportar 
+            `<script >
+                import Header from "./components/Header.vue";
+
+                export default {
+                    components: {
+                    Header
+                    }
+                };
+                </script>`
+
+    - Composition 
+        Se entiende que las importaciones se usaran como templates en la pagina
+            `<script setup>
+                import Header from "./components/Header.vue";
+            </script>`
+
+            
