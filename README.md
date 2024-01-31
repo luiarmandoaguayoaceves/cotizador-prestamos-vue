@@ -11,11 +11,24 @@
             npm run dev
     3. creara un url con el proyecto en Vitey Vue
 
+    4. Instalar dependencias de desarrollo y ejecutar 
+        - `npm install -D tailwindcss postcss autoprefixer`
+
+        Ejecutar compandos para crear archivos de tailwindcss
+        - `npx tailwindcss init -p`
+
+    5. Configurar el archivo de config de tailwind para que lea los archivos con todas esas extensiones que sean creados
+        - tailwind.config.js
+            content: [
+                "./index.html",
+                "./src/**/*.{vue,js,jsx,ts,tsx}"
+  ],
+
 ## Estructura de los archivos con extension vue 
     1. llevan lo qu se llama SFC (Single File Components) que seria llevar etiquetas de estilos de funcion (js) y etiquetas 
         - css
         - html
-        - Javascrript
+        - Javascript
 
         `<script setup>
         </script>
