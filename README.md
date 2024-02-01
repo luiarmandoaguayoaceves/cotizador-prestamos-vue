@@ -59,3 +59,12 @@
             </script>`
 
             
+## Eventos 
+    1. los eventos son las accriones que realiza mediante se utilizan botones en la aplicacion los eventos permiten escuchar cada una de esas accriones y existen dos manera de utilizar los eventos en Vue directamente en las etiquetas o componentes. Ambos funcionan igual de bien solo que lo ideal es utlizar el mar corto el que usa el @ 
+    v-on:input="handlerChange" 
+    @input="handlerChange"
+
+## States
+    1.  se ejecutan en base a ciertas funciones o condiciones en el codigo lo que llaman como (source of truth) funte de la verdad
+        - ref (toma valore primitivos)
+        - reactive (mandar solo objetos)
