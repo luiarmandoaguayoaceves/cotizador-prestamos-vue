@@ -64,7 +64,34 @@
     v-on:input="handlerChange" 
     @input="handlerChange"
 
+
 ## States
     1.  se ejecutan en base a ciertas funciones o condiciones en el codigo lo que llaman como (source of truth) funte de la verdad
         - ref (toma valore primitivos)
         - reactive (mandar solo objetos)
+
+### el VModel 
+    es una gran herramienta cuando se trata de reducir codigo ya que no tienes que hacer un set al valor y mandarlo en una variable este v-model permite realizar la busqueda del elemento y el set de el valor nuevo en tiempo real
+    v-model.number="cantidad"
+
+## Props
+    Los props son para hacer las etiquetas o templates inteligentes que permite pasar por parametros (props) algunos datos como sean necesarios para que el componente con 1 solo puedas reutilizarlo multiples veces 
+
+## props y Evento personalizado 
+    Se diferencian de la siguiente manera 
+    - props
+        :operador = "'-'"
+        :fn="handlerChangeDecremento"
+
+    - Evento personalizado 
+        @operador = "'-'"
+        @fn="handlerChangeDecremento"
+
+            Al usar eventos personalizados tambien llamados Emitir Eventos (emirt) podemos pasarle por parametros datos 
+             @click="$emit('fn')"
+            Con parametros o datos al campo padre agrega una variable de nombre hola pasalo como argumento y en la funcion agrega el parametro en donde se manda a llamar la funcion y se imprime en la funcion a llamar 
+             @click="$emit('fn' , hola )"
+             
+
+## Watchers 
+    Los cahcers son elementos de tipo escuchas que cuando se realiza un cambio en un elemento o un arreglo de elementos realiza cambios este watch esta en la esperad e cambios para realizar la accion que se le agrega como funcion 
